@@ -20,7 +20,7 @@ function App() {
       emailState: e.target.value.match(emailRegex), 
     });
 
-    (!validationStates.emailState && !validationStates.passwordState )? setValid(true) : setValid(false)
+    (validationStates.emailState && validationStates.passwordState )? setValid(false) : setValid(true)
 
   
   
@@ -35,7 +35,7 @@ function App() {
       passwordState: e.target.value.match(passwordRegex), 
     });
 
-    (validationStates.emailState && validationStates.passwordState )? setValid(true) : setValid(false)
+    (validationStates.emailState && validationStates.passwordState )? setValid(false) : setValid(true)
 
 
     });
